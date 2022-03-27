@@ -9,6 +9,7 @@
 ```
 **Class diagram**
 ```mermaid
+flowchart LR
 classDiagram
   direction RL
   class Student {
