@@ -83,11 +83,11 @@ namespace ReportSalesCoffee
             int n = dataGridView1.Rows.Add();
             dataGridView1.Rows[n].Cells[0].Value = textBoxNum.Text;
             dataGridView1.Rows[n].Cells[1].Value = textBoxName.Text;
-            dataGridView1.Rows[n].Cells[2].Value = textBoxPirce.Text;
+            dataGridView1.Rows[n].Cells[2].Value = textBoxAmount.Text;
             dataGridView1.Rows[n].Cells[3].Value = comboBoxDay.Text + "/" + comboBoxMount.Text + "/" + comboBoxYears.Text;
             textBoxNum.Text = "";
             textBoxName.Text = "";
-            textBoxPirce.Text = "";
+            textBoxAmount.Text = "";
         }
 
         

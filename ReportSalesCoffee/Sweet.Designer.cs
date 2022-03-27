@@ -33,10 +33,6 @@
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ColumnNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnPirce = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxNum = new System.Windows.Forms.TextBox();
             this.buttonAdd = new System.Windows.Forms.Button();
@@ -44,11 +40,15 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxName = new System.Windows.Forms.TextBox();
-            this.textBoxPirce = new System.Windows.Forms.TextBox();
+            this.textBoxAmount = new System.Windows.Forms.TextBox();
             this.comboBoxDay = new System.Windows.Forms.ComboBox();
             this.comboBoxMount = new System.Windows.Forms.ComboBox();
             this.comboBoxYears = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.ColumnNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnPirce = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -101,26 +101,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(443, 415);
             this.dataGridView1.TabIndex = 1;
             // 
-            // ColumnNumber
-            // 
-            this.ColumnNumber.HeaderText = "Number";
-            this.ColumnNumber.Name = "ColumnNumber";
-            // 
-            // ColumnName
-            // 
-            this.ColumnName.HeaderText = "Name";
-            this.ColumnName.Name = "ColumnName";
-            // 
-            // ColumnPirce
-            // 
-            this.ColumnPirce.HeaderText = "Pirce";
-            this.ColumnPirce.Name = "ColumnPirce";
-            // 
-            // ColumnDate
-            // 
-            this.ColumnDate.HeaderText = "Date";
-            this.ColumnDate.Name = "ColumnDate";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -161,9 +141,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(113, 229);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(29, 15);
+            this.label3.Size = new System.Drawing.Size(37, 15);
             this.label3.TabIndex = 6;
-            this.label3.Text = "ราคา";
+            this.label3.Text = "จำนวน";
             // 
             // label4
             // 
@@ -181,12 +161,12 @@
             this.textBoxName.Size = new System.Drawing.Size(121, 23);
             this.textBoxName.TabIndex = 8;
             // 
-            // textBoxPirce
+            // textBoxAmount
             // 
-            this.textBoxPirce.Location = new System.Drawing.Point(233, 226);
-            this.textBoxPirce.Name = "textBoxPirce";
-            this.textBoxPirce.Size = new System.Drawing.Size(121, 23);
-            this.textBoxPirce.TabIndex = 9;
+            this.textBoxAmount.Location = new System.Drawing.Point(233, 226);
+            this.textBoxAmount.Name = "textBoxAmount";
+            this.textBoxAmount.Size = new System.Drawing.Size(121, 23);
+            this.textBoxAmount.TabIndex = 9;
             // 
             // comboBoxDay
             // 
@@ -271,6 +251,26 @@
             this.label5.TabIndex = 26;
             this.label5.Text = "บันทึกรายการของหวาน";
             // 
+            // ColumnNumber
+            // 
+            this.ColumnNumber.HeaderText = "Number";
+            this.ColumnNumber.Name = "ColumnNumber";
+            // 
+            // ColumnName
+            // 
+            this.ColumnName.HeaderText = "Name";
+            this.ColumnName.Name = "ColumnName";
+            // 
+            // ColumnPirce
+            // 
+            this.ColumnPirce.HeaderText = "Amount";
+            this.ColumnPirce.Name = "ColumnPirce";
+            // 
+            // ColumnDate
+            // 
+            this.ColumnDate.HeaderText = "Date";
+            this.ColumnDate.Name = "ColumnDate";
+            // 
             // Sweet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -281,7 +281,7 @@
             this.Controls.Add(this.comboBoxYears);
             this.Controls.Add(this.comboBoxMount);
             this.Controls.Add(this.comboBoxDay);
-            this.Controls.Add(this.textBoxPirce);
+            this.Controls.Add(this.textBoxAmount);
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -309,10 +309,6 @@
         private ToolStripMenuItem openToolStripMenuItem;
         private ToolStripMenuItem saveToolStripMenuItem;
         private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn ColumnNumber;
-        private DataGridViewTextBoxColumn ColumnName;
-        private DataGridViewTextBoxColumn ColumnPirce;
-        private DataGridViewTextBoxColumn ColumnDate;
         private Label label1;
         private TextBox textBoxNum;
         private Button buttonAdd;
@@ -320,10 +316,14 @@
         private Label label3;
         private Label label4;
         private TextBox textBoxName;
-        private TextBox textBoxPirce;
+        private TextBox textBoxAmount;
         private ComboBox comboBoxDay;
         private ComboBox comboBoxMount;
         private ComboBox comboBoxYears;
         private Label label5;
+        private DataGridViewTextBoxColumn ColumnNumber;
+        private DataGridViewTextBoxColumn ColumnName;
+        private DataGridViewTextBoxColumn ColumnPirce;
+        private DataGridViewTextBoxColumn ColumnDate;
     }
 }

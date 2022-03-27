@@ -10,15 +10,15 @@ namespace ReportSalesCoffee
     {
         private string _num;
         private string _name;
-        private string _pirce;
+        private string _amount;
         private string _date;
         
 
-        public ClassSweet(string num, string name, string pirce, string date)
+        public ClassSweet(string num, string name, string amount, string date)
         {
             this._num = num;
             this._name = name;
-            this._pirce = pirce;
+            this._amount = amount;
             this._date = date;
         }
 
@@ -30,9 +30,9 @@ namespace ReportSalesCoffee
         {
             return _name;
         }
-        public string getPirce()
+        public string getAmount()
         {
-            return _pirce;
+            return _amount;
         }
         public string getDate()
         {

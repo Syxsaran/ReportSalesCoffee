@@ -35,7 +35,7 @@
             this.comboBoxYears = new System.Windows.Forms.ComboBox();
             this.comboBoxMount = new System.Windows.Forms.ComboBox();
             this.comboBoxDay = new System.Windows.Forms.ComboBox();
-            this.textBoxPirce = new System.Windows.Forms.TextBox();
+            this.textBoxAmount = new System.Windows.Forms.TextBox();
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,11 +44,11 @@
             this.textBoxNum = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label5 = new System.Windows.Forms.Label();
             this.ColumnNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnPirce = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label5 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -160,12 +160,12 @@
             this.comboBoxDay.Size = new System.Drawing.Size(43, 23);
             this.comboBoxDay.TabIndex = 21;
             // 
-            // textBoxPirce
+            // textBoxAmount
             // 
-            this.textBoxPirce.Location = new System.Drawing.Point(206, 210);
-            this.textBoxPirce.Name = "textBoxPirce";
-            this.textBoxPirce.Size = new System.Drawing.Size(121, 23);
-            this.textBoxPirce.TabIndex = 20;
+            this.textBoxAmount.Location = new System.Drawing.Point(206, 210);
+            this.textBoxAmount.Name = "textBoxAmount";
+            this.textBoxAmount.Size = new System.Drawing.Size(121, 23);
+            this.textBoxAmount.TabIndex = 20;
             // 
             // textBoxName
             // 
@@ -188,9 +188,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(86, 213);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(29, 15);
+            this.label3.Size = new System.Drawing.Size(37, 15);
             this.label3.TabIndex = 17;
-            this.label3.Text = "ราคา";
+            this.label3.Text = "จำนวน";
             // 
             // label2
             // 
@@ -242,6 +242,15 @@
             this.dataGridView1.Size = new System.Drawing.Size(443, 415);
             this.dataGridView1.TabIndex = 24;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(220, 69);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(94, 15);
+            this.label5.TabIndex = 25;
+            this.label5.Text = "บันทึกรายการกาแฟ";
+            // 
             // ColumnNumber
             // 
             this.ColumnNumber.HeaderText = "Number";
@@ -254,22 +263,13 @@
             // 
             // ColumnPirce
             // 
-            this.ColumnPirce.HeaderText = "Pirce";
+            this.ColumnPirce.HeaderText = "Amount";
             this.ColumnPirce.Name = "ColumnPirce";
             // 
             // ColumnDate
             // 
             this.ColumnDate.HeaderText = "Date";
             this.ColumnDate.Name = "ColumnDate";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(220, 69);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(94, 15);
-            this.label5.TabIndex = 25;
-            this.label5.Text = "บันทึกรายการกาแฟ";
             // 
             // Coffee
             // 
@@ -282,7 +282,7 @@
             this.Controls.Add(this.comboBoxYears);
             this.Controls.Add(this.comboBoxMount);
             this.Controls.Add(this.comboBoxDay);
-            this.Controls.Add(this.textBoxPirce);
+            this.Controls.Add(this.textBoxAmount);
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -311,7 +311,7 @@
         private ComboBox comboBoxYears;
         private ComboBox comboBoxMount;
         private ComboBox comboBoxDay;
-        private TextBox textBoxPirce;
+        private TextBox textBoxAmount;
         private TextBox textBoxName;
         private Label label4;
         private Label label3;
@@ -320,10 +320,10 @@
         private TextBox textBoxNum;
         private Label label1;
         private DataGridView dataGridView1;
+        private Label label5;
         private DataGridViewTextBoxColumn ColumnNumber;
         private DataGridViewTextBoxColumn ColumnName;
         private DataGridViewTextBoxColumn ColumnPirce;
         private DataGridViewTextBoxColumn ColumnDate;
-        private Label label5;
     }
 }
