@@ -10,7 +10,7 @@
 **Class diagram**
 ```mermaid
 classDiagram
-  direction RL
+  flowchart LR
   class Student {
     -idCard : IdCard
   }
