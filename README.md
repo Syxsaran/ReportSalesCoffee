@@ -24,6 +24,39 @@ classDiagram
   logincoffee()
   logindessert()
   }
+  class classcoffee{
+  -number
+  -name
+  -amount
+  -date
+  add()
+  }
+  class classdessert{
+  -number
+  -name
+  -amount
+  -date
+  add()
+  }
+  class Filecoffee{
+  -
+  open()
+  save()
+  }
+  class Filedessert{
+  -
+  open()
+  save()
+  }
+  class open{
+  -location file
+  open file()
+  }
+  class save{
+  -location file
+  save file()
+  }
+  save --|> Filecoffee
   ```
 **เจ้าของโปรแกรม**
 ```นาย ศรันย์ ซุ่นเส้ง```
