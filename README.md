@@ -64,7 +64,7 @@ classDiagram
   -location file
   save file()
   }
-  
+  savecoffee --|> Filecoffee
   ```
 **เจ้าของโปรแกรม**
 ```นาย ศรันย์ ซุ่นเส้ง```
