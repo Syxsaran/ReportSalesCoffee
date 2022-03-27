@@ -18,6 +18,12 @@ classDiagram
   class logout{
   close()
   }
+  class form2{
+  -coffee
+  -dessert
+  logincoffee()
+  logindessert()
+  }
   ```
 **เจ้าของโปรแกรม**
 ```นาย ศรันย์ ซุ่นเส้ง```
