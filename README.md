@@ -65,6 +65,7 @@ classDiagram
   save file()
   }
   savecoffee --|> Filecoffee
+  opencoffee --|> Filecoffee
   ```
 **เจ้าของโปรแกรม**
 ```นาย ศรันย์ ซุ่นเส้ง```
