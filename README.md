@@ -48,11 +48,19 @@ classDiagram
   open()
   save()
   }
-  class open{
+  class opendessert{
   -location file
   open file()
   }
-  class save{
+  class savedessert{
+  -location file
+  save file()
+  }
+  class opencoffee{
+  -location file
+  open file()
+  }
+  class savecoffee{
   -location file
   save file()
   }
