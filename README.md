@@ -8,9 +8,8 @@
 โปรแกรมนี้สร้างขึ้นเพื่อที่จะบันทึกว่าในเเต่ละวันมีการขายกาแฟและของหวานไปเท่าไหร่
 ```
 **Class diagram**
-```mermaid
 classDiagram
-  flowchart LR
+  direction RL
   class Student {
     -idCard : IdCard
   }
@@ -24,6 +23,5 @@ classDiagram
   }
   Student "1" --o "1" IdCard : carries
   Student "1" --o "1" Bike : rides
-```
 **เจ้าของโปรแกรม**
 ```นาย ศรันย์ ซุ่นเส้ง```
