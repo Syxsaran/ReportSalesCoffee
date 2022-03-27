@@ -64,10 +64,7 @@ classDiagram
   -location file
   save file()
   }
-  save --|> Filecoffee
-  open --|> Filecoffee
-  save --|> Filedessert
-  open --|> Filedessert
+  
   ```
 **เจ้าของโปรแกรม**
 ```นาย ศรันย์ ซุ่นเส้ง```
