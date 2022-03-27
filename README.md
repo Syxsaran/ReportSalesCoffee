@@ -8,7 +8,7 @@
 โปรแกรมนี้สร้างขึ้นเพื่อที่จะบันทึกว่าในเเต่ละวันมีการขายกาแฟและของหวานไปเท่าไหร่
 ```
 **Class diagram**
-```
+```mermaid
 classDiagram
   direction RL
   class Student {
