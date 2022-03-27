@@ -15,6 +15,9 @@ classDiagram
   login()
   logout()
   }
+  class logout{
+  close()
+  }
   ```
 **เจ้าของโปรแกรม**
 ```นาย ศรันย์ ซุ่นเส้ง```
