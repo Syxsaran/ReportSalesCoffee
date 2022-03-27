@@ -72,6 +72,9 @@ classDiagram
   
   Filedessert --|> classdessert
   Filecoffee --|> classcoffee
+  
+  classcoffee --|> form2
+  classdessert --|> form2
   ```
 **เจ้าของโปรแกรม**
 ```นาย ศรันย์ ซุ่นเส้ง```
