@@ -9,12 +9,16 @@
 ```
 **Class diagram**
 
-classDiagram
-    class BankAccount
-    BankAccount : +String owner
-    BankAccount : +Bigdecimal balance
-    BankAccount : +deposit(amount)
-    BankAccount : +withdrawl(amount)
-
 **เจ้าของโปรแกรม**
 ```นาย ศรันย์ ซุ่นเส้ง```
+```
+classDiagram
+classA <|-- classB
+classC *-- classD
+classE o-- classF
+classG <-- classH
+classI -- classJ
+classK <.. classL
+classM <|.. classN
+classO .. classP
+```
