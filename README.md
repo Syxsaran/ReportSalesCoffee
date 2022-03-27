@@ -11,7 +11,7 @@
 ```mermaid
 classDiagram
   direction LR
-  class Student {
+  class ไก่ {
     -idCard : IdCard
   }
   class IdCard{
