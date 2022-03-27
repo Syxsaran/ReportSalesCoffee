@@ -69,6 +69,9 @@ classDiagram
   
   savedessert --|> Filedessert
   opendessert --|> Filedessert
+  
+  Filedessert --|> classdessert
+  Filecoffee --|> classcoffee
   ```
 **เจ้าของโปรแกรม**
 ```นาย ศรันย์ ซุ่นเส้ง```
