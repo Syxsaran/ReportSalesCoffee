@@ -75,6 +75,9 @@ classDiagram
   
   classcoffee --|> form2
   classdessert --|> form2
+  
+  form2 --|> form1
+  logout --|> form1
   ```
 **เจ้าของโปรแกรม**
 ```นาย ศรันย์ ซุ่นเส้ง```
