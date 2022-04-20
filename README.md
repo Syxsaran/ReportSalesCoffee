@@ -38,12 +38,24 @@ classDiagram
   -date
   add()
   }
+    class classfood{
+  -number
+  -name
+  -amount
+  -date
+  add()
+  }
   class Filecoffee{
   -
   open()
   save()
   }
   class Filedessert{
+  -
+  open()
+  save()
+  }
+  class Filefood{
   -
   open()
   save()
@@ -64,15 +76,28 @@ classDiagram
   -location file
   save file()
   }
+  class openfood{
+  -location file
+  open file()
+  }
+  class savefood{
+  -location file
+  save file()
+  }
   savecoffee --|> Filecoffee
   opencoffee --|> Filecoffee
+  
+  openfood --|> Filefood
+  savefood --|> Filefood
   
   savedessert --|> Filedessert
   opendessert --|> Filedessert
   
+  Filefood --|> classfood
   Filedessert --|> classdessert
   Filecoffee --|> classcoffee
   
+  classfood --|> form2
   classcoffee --|> form2
   classdessert --|> form2
   
